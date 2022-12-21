@@ -12,6 +12,7 @@ class MainPage(BaseObject):
 
     def click_on_logo(self):
         self.is_click(MainPageLocators.LOGO_BTN).click()
+        time.sleep(2)
 
     def click_on_user_management(self):
         self.is_click(MainPageLocators.USER_MANAGEMENT_BTN).click()

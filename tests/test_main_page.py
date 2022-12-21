@@ -12,7 +12,3 @@ def test_first(index_page, main_page):
     main_page.click_om_tile_projects_display()
     main_page.click_om_list_projects_display()
     main_page.click_on_profile_btn()
-
-
-def test_second(index_page, main_page):
-

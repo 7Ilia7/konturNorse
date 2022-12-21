@@ -1,3 +1,5 @@
+import time
+
 from base_object.locators import Locators
 from base_object.base import BaseObject
 
@@ -8,6 +10,11 @@ class IndexPage(BaseObject):
     def __init__(self, driver):
         super().__init__(driver)
         self.driver = driver
+
+    def login_flow(self):
+        self.to_send_keys(Locators.USER_NAME_FIELD, "illia.demchuk@norse.digital")
+        self.to_send_keys(Locators.PASSWORD_FIELD, "Agr47001ii")
+        self.to_click(Locators.LOGIN_BTN)
 
     def input_correct_user_name(self):
         self.to_send_keys(Locators.USER_NAME_FIELD, "illia.demchuk@norse.digital")
