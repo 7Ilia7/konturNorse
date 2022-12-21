@@ -31,8 +31,7 @@ def test_signin_btn_on_forget_password_page(index_page):
     index_page.click_on_sign_btn_on_forget_pass_page()
     index_page.check_txt_sign_in_on_log_page()
 
-def test_lgn(index_page):
-    index_page.login_flow()
+
 
 
 

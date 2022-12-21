@@ -39,6 +39,11 @@ class CreateProjectsLocator:
 
     CHOOSE_DATA_PACKAGE_200M = (By.XPATH, '//div[contains(text(),"200mTestQa")]')
 
+    BTN_NEXT = (By.CSS_SELECTOR, '.MuiBox-root.css-1oevkxy button:nth-child(2)')
+    BTN_START_BUILDING_PROJ = (By.CSS_SELECTOR, '.MuiBox-root.css-ndh2dq button')
 
+    LAYER_THIKNESS = (By.CSS_SELECTOR, '.MuiCardContent-root.css-5y4tke')
+    INPUT_LAYER_NAME = (By.CSS_SELECTOR, '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq')
 
+    BTN_TOP = (By.CSS_SELECTOR, '.MuiSelect-select.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedStart.css-pgaui2')
 

@@ -38,7 +38,7 @@ def main_page(setup):
     yield MainPage(setup)
 
 @pytest.fixture
-def main_page(setup):
+def create_project_page(setup):
     yield CreateProjectPage(setup)
 
 
