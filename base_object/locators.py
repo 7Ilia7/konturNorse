@@ -24,6 +24,10 @@ class MainPageLocators:
     PROJECTS_BTN_LIST = (By.CSS_SELECTOR, '.MuiBox-root.css-70qvj9 button:nth-child(3)')
     PROJECTS_BTN_TILE = (By.CSS_SELECTOR, '.MuiBox-root.css-70qvj9 button:nth-child(2)')
     START_NEW_PROJECTS_BTN = (By.CSS_SELECTOR, '.MuiBox-root.css-70qvj9 button:nth-child(4)')
+    FIND_200M_PROJECT = (By.CSS_SELECTOR, '//p[contains(text(),"200mTest")]')
+    DELETE_FIRST_PROJECT_IN_LIST = (By.CSS_SELECTOR, '.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-1yxmbwk')
+    DELETE_YES = (By.CSS_SELECTOR, '.MuiBox-root.css-1l4w6pd button:nth-child(1)')
+    DELETE_NO = (By.CSS_SELECTOR, '.MuiBox-root.css-1l4w6pd button:nth-child(2)')
 
 
 class CreateProjectsLocator:
@@ -46,4 +50,11 @@ class CreateProjectsLocator:
     INPUT_LAYER_NAME = (By.CSS_SELECTOR, '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq')
 
     BTN_TOP = (By.CSS_SELECTOR, '.MuiSelect-select.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedStart.css-pgaui2')
+    ASPHALT_BOTTOM = (By.CSS_SELECTOR, '.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9 li:nth-child(2)')
 
+    BTN_BOTTOM = (By.CSS_SELECTOR, '.css-1s2p0j8 div:nth-child(3) div:nth-child(2)')
+    BASE_BOTTOM = (By.CSS_SELECTOR, '.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9 li:nth-child(2)')
+
+    ADD_SELECTED_TRACKER_BTN = (By.CSS_SELECTOR, '.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-1ma8rp')
+
+    CREATE_PROJECT_BTN = (By.CSS_SELECTOR, '.MuiBox-root.css-1oevkxy button:nth-child(2)')

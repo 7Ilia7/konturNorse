@@ -8,3 +8,10 @@ def test_create_200m_project(index_page, main_page, create_project_page):
     create_project_page.click_layer_thikness()
     create_project_page.input_layer_name()
     create_project_page.click_top_layer_dropdown()
+    create_project_page.click_asphalt_bottom()
+    create_project_page.click_bottom_layer_dropdown()
+    create_project_page.click_bottom_bottom_layer()
+    create_project_page.add_selected_tracker()
+    create_project_page.create_project_btn()
+    create_project_page.delete_first_project_in_list()
+
