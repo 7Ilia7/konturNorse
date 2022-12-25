@@ -42,6 +42,7 @@ class CreateProjectsLocator:
     COORDINATE_3857 = (By.CSS_SELECTOR, '.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9 li:nth-child(2)')
 
     CHOOSE_DATA_PACKAGE_200M = (By.XPATH, '//div[contains(text(),"200mTestQa")]')
+    CHOOSE_DATA_PACKAGE_14KM = (By.XPATH, '//div[contains(text(),"14kmAllTracker")]')
 
     BTN_NEXT = (By.CSS_SELECTOR, '.MuiBox-root.css-1oevkxy button:nth-child(2)')
     BTN_START_BUILDING_PROJ = (By.CSS_SELECTOR, '.MuiBox-root.css-ndh2dq button')
@@ -58,3 +59,7 @@ class CreateProjectsLocator:
     ADD_SELECTED_TRACKER_BTN = (By.CSS_SELECTOR, '.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-1ma8rp')
 
     CREATE_PROJECT_BTN = (By.CSS_SELECTOR, '.MuiBox-root.css-1oevkxy button:nth-child(2)')
+
+#     Delam Menu
+
+    DELAM_NAME_INPUT_FIELD = (By.CSS_SELECTOR, '')

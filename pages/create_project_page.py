@@ -11,8 +11,14 @@ class CreateProjectPage(BaseObject):
     def input_project_name(self):
         self.to_send_keys(CreateProjectsLocator.PROJECT_NAME_FIELD, "200mTest")
 
+    def input_project_name_14km_all_tracker(self):
+        self.to_send_keys(CreateProjectsLocator.PROJECT_NAME_FIELD, "14km_all_tracker")
+
     def choose_data_package(self):
         self.to_click(CreateProjectsLocator.CHOOSE_DATA_PACKAGE_200M)
+
+    def choose_data_package_14km(self):
+        self.to_click(CreateProjectsLocator.CHOOSE_DATA_PACKAGE_14KM)
 
     def btn_next(self):
         self.to_click(CreateProjectsLocator.BTN_NEXT)
@@ -51,5 +57,8 @@ class CreateProjectPage(BaseObject):
         self.to_click(MainPageLocators.DELETE_FIRST_PROJECT_IN_LIST)
         self.to_click(MainPageLocators.DELETE_YES)
 
+# add delamination layer, when we create project
 
+    def input_name_delam_layer_field(self):
+        self.to_click()
 
