@@ -43,16 +43,13 @@ class CreateProjectPage(BaseObject):
 
     def create_project_btn(self):
         self.to_click(CreateProjectsLocator.CREATE_PROJECT_BTN)
-        time.sleep(20)
+
+    def check_200m_project_was_created(self):
+        self.assertion(self.get_text(MainPageLocators.FIND_200M_PROJECT), "200mTest")
 
     def delete_first_project_in_list(self):
         self.to_click(MainPageLocators.DELETE_FIRST_PROJECT_IN_LIST)
         self.to_click(MainPageLocators.DELETE_YES)
-        time.sleep(10)
 
-
-    # def check_200m_project_was_created(self):
-    #     self.assertion(self.get_text(MainPageLocators.FIND_200M_PROJECT), '200mTest')
-    #     time.sleep(20)
 
 

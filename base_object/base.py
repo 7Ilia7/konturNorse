@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 class BaseObject:
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 5)
+        self.wait = WebDriverWait(driver, 30)
 
     def is_visible(self, locator):
         return self.wait.until(ec.visibility_of_element_located(locator))
