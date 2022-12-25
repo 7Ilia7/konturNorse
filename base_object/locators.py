@@ -68,3 +68,6 @@ class CreateProjectsLocator:
     CHECK_ASPH_BASE_BOTTOM = (By.XPATH, '//span[contains(text(),"Base bottom")]')
     CHECK_SURFACE_ASPH_BOTTOM = (By.XPATH, '//span[contains(text(),"Surface")]')
     ADD_SELECTED_TRACKER_BTN_DELAM = (By.CSS_SELECTOR, '.MuiBox-root.css-1h9zagw button:nth-child(2)')
+
+#     Crack Menu
+    CRACK = (By.CSS_SELECTOR, '.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-4.css-17xlo9l  div:nth-child(3)')
