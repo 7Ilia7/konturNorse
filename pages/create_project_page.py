@@ -26,6 +26,9 @@ class CreateProjectPage(BaseObject):
     def btn_start_build_project(self):
         self.to_click(CreateProjectsLocator.BTN_START_BUILDING_PROJ)
 
+    def add_more_tracker_btn(self):
+        self.to_click(CreateProjectsLocator.ADD_MORE_TRACKER_BTN)
+
     def click_layer_thikness(self):
         self.to_click(CreateProjectsLocator.LAYER_THIKNESS)
 
@@ -59,6 +62,18 @@ class CreateProjectPage(BaseObject):
 
 # add delamination layer, when we create project
 
+    def click_delam_layer(self):
+        self.to_click(CreateProjectsLocator.DELAM)
+
     def input_name_delam_layer_field(self):
-        self.to_click()
+        self.to_send_keys(CreateProjectsLocator.DELAMINATION_NAME_INPUT_FIELD, 'Delam Layer')
+
+    def choose_asphalt_layer(self):
+        self.to_click(CreateProjectsLocator.CHECK_ASPH_BASE_BOTTOM)
+
+    def choose_surface_layer(self):
+        self.to_click(CreateProjectsLocator.CHECK_SURFACE_ASPH_BOTTOM)
+
+    def add_selected_tracker_delam(self):
+        self.to_click(CreateProjectsLocator.ADD_SELECTED_TRACKER_BTN_DELAM)
 

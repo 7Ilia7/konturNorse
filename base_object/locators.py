@@ -46,7 +46,7 @@ class CreateProjectsLocator:
 
     BTN_NEXT = (By.CSS_SELECTOR, '.MuiBox-root.css-1oevkxy button:nth-child(2)')
     BTN_START_BUILDING_PROJ = (By.CSS_SELECTOR, '.MuiBox-root.css-ndh2dq button')
-
+    # Thikness layer
     LAYER_THIKNESS = (By.CSS_SELECTOR, '.MuiCardContent-root.css-5y4tke')
     INPUT_LAYER_NAME = (By.CSS_SELECTOR, '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq')
 
@@ -60,6 +60,11 @@ class CreateProjectsLocator:
 
     CREATE_PROJECT_BTN = (By.CSS_SELECTOR, '.MuiBox-root.css-1oevkxy button:nth-child(2)')
 
-#     Delam Menu
+    ADD_MORE_TRACKER_BTN = (By.CSS_SELECTOR, '.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-o0z51j')
 
-    DELAM_NAME_INPUT_FIELD = (By.CSS_SELECTOR, '')
+#     Delam Menu
+    DELAM = (By.CSS_SELECTOR, '.MuiBox-root.css-abw72h div:nth-child(2)')
+    DELAMINATION_NAME_INPUT_FIELD = (By.CSS_SELECTOR, '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq')
+    CHECK_ASPH_BASE_BOTTOM = (By.XPATH, '//span[contains(text(),"Base bottom")]')
+    CHECK_SURFACE_ASPH_BOTTOM = (By.XPATH, '//span[contains(text(),"Surface")]')
+    ADD_SELECTED_TRACKER_BTN_DELAM = (By.CSS_SELECTOR, '.MuiBox-root.css-1h9zagw button:nth-child(2)')

@@ -31,4 +31,10 @@ def test_create_14km_project(index_page, main_page, create_project_page):
     create_project_page.click_bottom_bottom_layer()
     create_project_page.add_selected_tracker()
 # начинаем создавать деламинейшин слой
+    create_project_page.add_more_tracker_btn()
+    create_project_page.click_delam_layer()
+    create_project_page.input_name_delam_layer_field()
+    create_project_page.choose_asphalt_layer()
+    create_project_page.add_selected_tracker_delam()
+    create_project_page.create_project_btn()
 
