@@ -1,7 +1,6 @@
 from base_object.locators import CreateProjectsLocator
 from base_object.locators import MainPageLocators
 from base_object.base import BaseObject
-import time
 class CreateProjectPage(BaseObject):
 
     def __init__(self, driver):
@@ -56,8 +55,10 @@ class CreateProjectPage(BaseObject):
     def check_200m_project_was_created(self):
         self.assertion(self.get_text(MainPageLocators.FIND_200M_PROJECT), "200mTest")
 
-    def delete_first_project_in_list(self):
+    def delete_first_project_in_list_btn_delete(self):
         self.to_click(MainPageLocators.DELETE_FIRST_PROJECT_IN_LIST)
+
+    def delete_project_btn_yes(self):
         self.to_click(MainPageLocators.DELETE_YES)
 
 # add delamination layer, when we create project

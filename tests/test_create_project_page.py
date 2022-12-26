@@ -1,4 +1,3 @@
-import time
 def test_create_200m_project(index_page, main_page, create_project_page):
     index_page.login_flow()
     main_page.click_on_btn_start_new_project()
@@ -15,7 +14,9 @@ def test_create_200m_project(index_page, main_page, create_project_page):
     create_project_page.add_selected_tracker()
     create_project_page.create_project_btn()
     create_project_page.check_200m_project_was_created()
-    create_project_page.delete_first_project_in_list()
+    create_project_page.delete_first_project_in_list_btn_delete()
+    create_project_page.delete_project_btn_yes()
+    main_page.check_that_we_not_have_any_project()
 
 def test_create_14km_project(index_page, main_page, create_project_page):
     index_page.login_flow()
@@ -47,4 +48,6 @@ def test_create_14km_project(index_page, main_page, create_project_page):
     create_project_page.create_project_btn()
 #  Проверяем наличее созданного проекта и удаляем его.
     create_project_page.check_14km_project_was_created()
-    create_project_page.delete_first_project_in_list()
+    create_project_page.delete_first_project_in_list_btn_delete()
+    create_project_page.delete_project_btn_yes()
+    main_page.check_that_we_not_have_any_project()

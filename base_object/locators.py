@@ -29,6 +29,7 @@ class MainPageLocators:
     DELETE_FIRST_PROJECT_IN_LIST = (By.CSS_SELECTOR, '.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-1yxmbwk')
     DELETE_YES = (By.CSS_SELECTOR, '.MuiBox-root.css-1l4w6pd button:nth-child(1)')
     DELETE_NO = (By.CSS_SELECTOR, '.MuiBox-root.css-1l4w6pd button:nth-child(2)')
+    TEXT_WHEN_WE_HAVE_ANY_PROJECT = (By.CSS_SELECTOR, '.MuiTypography-root.MuiTypography-body1.MuiTypography-alignCenter.css-ustd3q')
 
 
 class CreateProjectsLocator:
