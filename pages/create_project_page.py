@@ -66,7 +66,7 @@ class CreateProjectPage(BaseObject):
         self.to_click(CreateProjectsLocator.DELAM)
 
     def input_name_delam_layer_field(self):
-        self.to_send_keys(CreateProjectsLocator.DELAMINATION_NAME_INPUT_FIELD, 'Delam Layer')
+        self.to_send_keys(CreateProjectsLocator.NAME_INPUT_FIELD_DELAM_OR_CRACK, 'Delam Layer')
 
     def choose_asphalt_layer(self):
         self.to_click(CreateProjectsLocator.CHECK_ASPH_BASE_BOTTOM)
@@ -76,4 +76,21 @@ class CreateProjectPage(BaseObject):
 
     def add_selected_tracker_delam(self):
         self.to_click(CreateProjectsLocator.ADD_SELECTED_TRACKER_BTN_DELAM)
+
+#  create crack layer
+
+    def click_add_crack_layer(self):
+        self.to_click(CreateProjectsLocator.CRACK)
+
+    def input_name_crack_layer(self):
+        self.to_send_keys(CreateProjectsLocator.NAME_INPUT_FIELD_DELAM_OR_CRACK, 'Crack layer')
+
+    def check_box_asphalt_layer(self):
+        self.to_click(CreateProjectsLocator.CHECK_ASPHALT_BOTTOM_CRACK)
+
+    def check_box_base_bottom_crack(self):
+        self.to_click(CreateProjectsLocator.CHECK_ASPHALT_BOTTOM_CRACK)
+
+    def check_box_surface_bottom_layer(self):
+        self.to_click(CreateProjectsLocator.CHECK_SURFACE_CRACK)
 

@@ -36,5 +36,11 @@ def test_create_14km_project(index_page, main_page, create_project_page):
     create_project_page.input_name_delam_layer_field()
     create_project_page.choose_asphalt_layer()
     create_project_page.add_selected_tracker_delam()
+# Начинаем создавать крек слой
+    create_project_page.add_more_tracker_btn()
+    create_project_page.click_add_crack_layer()
+    create_project_page.input_name_crack_layer()
+    create_project_page.check_box_asphalt_layer()
+    create_project_page.check_box_base_bottom_crack()
+    create_project_page.add_selected_tracker()
     create_project_page.create_project_btn()
-

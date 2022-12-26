@@ -56,7 +56,7 @@ class CreateProjectsLocator:
     BTN_BOTTOM = (By.CSS_SELECTOR, '.css-1s2p0j8 div:nth-child(3) div:nth-child(2)')
     BASE_BOTTOM = (By.CSS_SELECTOR, '.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9 li:nth-child(2)')
 
-    ADD_SELECTED_TRACKER_BTN = (By.CSS_SELECTOR, '.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.css-1ma8rp')
+    ADD_SELECTED_TRACKER_BTN = (By.CSS_SELECTOR, '.MuiBox-root.css-1h9zagw button:nth-child(2)')
 
     CREATE_PROJECT_BTN = (By.CSS_SELECTOR, '.MuiBox-root.css-1oevkxy button:nth-child(2)')
 
@@ -64,10 +64,13 @@ class CreateProjectsLocator:
 
 #     Delam Menu
     DELAM = (By.CSS_SELECTOR, '.MuiBox-root.css-abw72h div:nth-child(2)')
-    DELAMINATION_NAME_INPUT_FIELD = (By.CSS_SELECTOR, '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq')
+    NAME_INPUT_FIELD_DELAM_OR_CRACK = (By.CSS_SELECTOR, '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq')
     CHECK_ASPH_BASE_BOTTOM = (By.XPATH, '//span[contains(text(),"Base bottom")]')
     CHECK_SURFACE_ASPH_BOTTOM = (By.XPATH, '//span[contains(text(),"Surface")]')
     ADD_SELECTED_TRACKER_BTN_DELAM = (By.CSS_SELECTOR, '.MuiBox-root.css-1h9zagw button:nth-child(2)')
 
 #     Crack Menu
     CRACK = (By.CSS_SELECTOR, '.MuiGrid-root.MuiGrid-container.MuiGrid-spacing-xs-4.css-17xlo9l  div:nth-child(3)')
+    CHECK_BASE_BOTTOM_CRACK = (By.XPATH, '//span[contains(text(),"Base bottom")]')
+    CHECK_ASPHALT_BOTTOM_CRACK = (By.XPATH, '//span[contains(text(),"Asphalt bottom")]')
+    CHECK_SURFACE_CRACK = (By.XPATH, '//span[contains(text(),"Surface")]')
