@@ -1,3 +1,4 @@
+import time
 def test_create_200m_project(index_page, main_page, create_project_page):
     index_page.login_flow()
     main_page.click_on_btn_start_new_project()
@@ -44,3 +45,6 @@ def test_create_14km_project(index_page, main_page, create_project_page):
     create_project_page.check_box_base_bottom_crack()
     create_project_page.add_selected_tracker()
     create_project_page.create_project_btn()
+#  Проверяем наличее созданного проекта и удаляем его.
+    create_project_page.check_14km_project_was_created()
+    create_project_page.delete_first_project_in_list()

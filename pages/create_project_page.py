@@ -89,8 +89,11 @@ class CreateProjectPage(BaseObject):
         self.to_click(CreateProjectsLocator.CHECK_ASPHALT_BOTTOM_CRACK)
 
     def check_box_base_bottom_crack(self):
-        self.to_click(CreateProjectsLocator.CHECK_ASPHALT_BOTTOM_CRACK)
+        self.to_click(CreateProjectsLocator.CHECK_BASE_BOTTOM_CRACK)
 
     def check_box_surface_bottom_layer(self):
         self.to_click(CreateProjectsLocator.CHECK_SURFACE_CRACK)
+
+    def check_14km_project_was_created(self):
+        self.assertion(self.get_text(MainPageLocators.FIND_14KM_PROJECT), "14km_all_tracker")
 

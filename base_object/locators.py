@@ -25,6 +25,7 @@ class MainPageLocators:
     PROJECTS_BTN_TILE = (By.CSS_SELECTOR, '.MuiBox-root.css-70qvj9 button:nth-child(2)')
     START_NEW_PROJECTS_BTN = (By.CSS_SELECTOR, '.MuiBox-root.css-70qvj9 button:nth-child(4)')
     FIND_200M_PROJECT = (By.XPATH, '//p[contains(text(),"200mTest")]')
+    FIND_14KM_PROJECT = (By.XPATH, '//p[contains(text(),"14km_all_tracker")]')
     DELETE_FIRST_PROJECT_IN_LIST = (By.CSS_SELECTOR, '.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-1yxmbwk')
     DELETE_YES = (By.CSS_SELECTOR, '.MuiBox-root.css-1l4w6pd button:nth-child(1)')
     DELETE_NO = (By.CSS_SELECTOR, '.MuiBox-root.css-1l4w6pd button:nth-child(2)')
