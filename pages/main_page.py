@@ -19,6 +19,9 @@ class MainPage(BaseObject):
     def click_on_data_package_menu(self):
         self.to_click(MainPageLocators.DATA_PACKAGE_BTN)
 
+    def check_in_data_package_menu(self):
+        self.assertion(self.get_text(MainPageLocators.DATA_PACKAGE_TXT), 'Data Packages')
+
 
     def click_on_projects_btn_menu(self):
         self.to_click(MainPageLocators.PROJECTS_BTN)

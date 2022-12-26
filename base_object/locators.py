@@ -19,6 +19,7 @@ class MainPageLocators:
     LOGO_BTN = (By.CSS_SELECTOR, '.logo')
     PROJECTS_BTN = (By.CSS_SELECTOR, '.MuiBox-root.css-2sya8s div:nth-child(1)')
     DATA_PACKAGE_BTN = (By.CSS_SELECTOR, '.MuiBox-root.css-2sya8s div:nth-child(2)')
+    DATA_PACKAGE_TXT = (By.CSS_SELECTOR, '.MuiTypography-root.MuiTypography-h5.css-mw8q1s')
     USER_MANAGEMENT_BTN = (By.CSS_SELECTOR, '.MuiBox-root.css-2sya8s div:nth-child(3)')
     PROFILE_BTN = (By.CSS_SELECTOR, '.MuiAvatar-root.MuiAvatar-circular.MuiAvatar-colorDefault.css-xe3wy')
     PROJECTS_BTN_LIST = (By.CSS_SELECTOR, '.MuiBox-root.css-70qvj9 button:nth-child(3)')
