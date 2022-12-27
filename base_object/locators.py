@@ -31,6 +31,7 @@ class MainPageLocators:
     DELETE_YES = (By.CSS_SELECTOR, '.MuiBox-root.css-1l4w6pd button:nth-child(1)')
     DELETE_NO = (By.CSS_SELECTOR, '.MuiBox-root.css-1l4w6pd button:nth-child(2)')
     TEXT_WHEN_WE_HAVE_ANY_PROJECT = (By.CSS_SELECTOR, '.MuiTypography-root.MuiTypography-body1.MuiTypography-alignCenter.css-ustd3q')
+    PROCESSING = (By.XPATH, '//p[contains(text(),"processing")]')
 
 
 class CreateProjectsLocator:

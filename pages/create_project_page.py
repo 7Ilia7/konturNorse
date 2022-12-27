@@ -97,4 +97,3 @@ class CreateProjectPage(BaseObject):
 
     def check_14km_project_was_created(self):
         self.assertion(self.get_text(MainPageLocators.FIND_14KM_PROJECT), "14km_all_tracker")
-

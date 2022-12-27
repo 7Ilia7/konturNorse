@@ -7,6 +7,11 @@ class BaseObject:
         self.wait = WebDriverWait(driver, 600)
 
     def is_visible(self, locator):
+        """
+
+        :param locator:
+        :return:
+        """
         return self.wait.until(ec.visibility_of_element_located(locator))
 
     def is_click(self, locator):
