@@ -1,6 +1,8 @@
 from selenium.webdriver.support import expected_conditions as ec
 from selenium.webdriver.support.ui import WebDriverWait
-
+from selenium.common.exceptions import NoSuchElementException
+import math
+import os
 class BaseObject:
     def __init__(self, driver):
         self.driver = driver
@@ -29,6 +31,14 @@ class BaseObject:
 
     def to_send_keys(self, locator, data):
         self.is_visible(locator).send_keys(data)
+
+    def is_disappeared(self, locator, locator2):
+        try:
+            self.is_visible(locator)
+        except NoSuchElementException:
+            self.to_click(locator2)
+
+
 
 
 

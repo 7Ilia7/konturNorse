@@ -38,3 +38,6 @@ class MainPage(BaseObject):
     def check_that_we_not_have_any_project(self):
         self.assertion(self.get_text(MainPageLocators.TEXT_WHEN_WE_HAVE_ANY_PROJECT), 'Click on the button below to get started')
 
+    def check_no_processing(self):
+        self.is_disappeared(MainPageLocators.PROCESSING, MainPageLocators.DELETE_FIRST_PROJECT_IN_LIST)
+
