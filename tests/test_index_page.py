@@ -1,24 +1,31 @@
+import allure
+
+
 def test_correct_login(index_page):
     index_page.input_correct_user_name()
     index_page.input_correct_password()
     index_page.click_login()
     index_page.check_element_on_main()
 
+
 def test_incorrect_login(index_page):
     index_page.input_incorrect_user_name()
     index_page.input_correct_password()
     index_page.click_login()
     index_page.check_element_wrong_data()
-#
+
+
 def test_only_password_data(index_page):
     index_page.input_correct_password()
     index_page.click_login()
     index_page.text_if_no_email()
 
+
 def test_only_email_data(index_page):
     index_page.input_correct_user_name()
     index_page.click_login()
     index_page.check_element_no_password_data()
+
 
 def test_forgot_password(index_page):
     index_page.forgot_password_click()
