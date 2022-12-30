@@ -1,3 +1,7 @@
+import pytest
+
+@pytest.mark.ui
+@pytest.mark.smoke
 def test_create_200m_project(index_page, main_page, create_project_page):
     index_page.login_flow()
     main_page.click_on_btn_start_new_project()
@@ -18,6 +22,8 @@ def test_create_200m_project(index_page, main_page, create_project_page):
     create_project_page.delete_project_btn_yes()
     main_page.check_that_we_not_have_any_project()
 
+@pytest.mark.ui
+@pytest.mark.smoke
 def test_create_14km_project(index_page, main_page, create_project_page):
     index_page.login_flow()
     main_page.click_on_btn_start_new_project()

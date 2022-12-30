@@ -2,3 +2,5 @@ selenium==4.7.2
 webdriver-manager
 pytest==7.2.0
 allure-pytest==2.12.0
+pytest-rerunfailures
+pytest-html-reporter
