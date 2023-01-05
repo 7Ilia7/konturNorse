@@ -1,0 +1,40 @@
+******* 01/05/2023 11: 36: 49 PM - INFO - send keys or data on ('css selector', '.MuiOutlinedInput-input.MuiInputBase-input.css-1sxenmq')
+******* 01/05/2023 11: 36: 49 PM - INFO - ('css selector', '.MuiOutlinedInput-input.MuiInputBase-input.css-1sxenmq') is visible
+******* 01/05/2023 11: 36: 50 PM - INFO - send keys or data on ('id', ':r1:')
+******* 01/05/2023 11: 36: 50 PM - INFO - ('id', ':r1:') is visible
+******* 01/05/2023 11: 36: 51 PM - INFO - do click on ('css selector', '.MuiBox-root.css-1yuhhex button')
+******* 01/05/2023 11: 36: 51 PM - INFO - ('css selector', '.MuiBox-root.css-1yuhhex button') is clickable
+******* 01/05/2023 11: 36: 51 PM - INFO - do click on ('css selector', '.MuiBox-root.css-70qvj9 button:nth-child(4)')
+******* 01/05/2023 11: 36: 51 PM - INFO - ('css selector', '.MuiBox-root.css-70qvj9 button:nth-child(4)') is clickable
+******* 01/05/2023 11: 36: 52 PM - INFO - send keys or data on ('css selector', '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq')
+******* 01/05/2023 11: 36: 52 PM - INFO - ('css selector', '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq') is visible
+******* 01/05/2023 11: 36: 53 PM - INFO - do click on ('xpath', '//div[contains(text(),"200mTestQa")]')
+******* 01/05/2023 11: 36: 53 PM - INFO - ('xpath', '//div[contains(text(),"200mTestQa")]') is clickable
+******* 01/05/2023 11: 37: 01 PM - INFO - do click on ('css selector', '.MuiBox-root.css-1oevkxy button:nth-child(2)')
+******* 01/05/2023 11: 37: 01 PM - INFO - ('css selector', '.MuiBox-root.css-1oevkxy button:nth-child(2)') is clickable
+******* 01/05/2023 11: 37: 01 PM - INFO - do click on ('css selector', '.MuiBox-root.css-ndh2dq button')
+******* 01/05/2023 11: 37: 01 PM - INFO - ('css selector', '.MuiBox-root.css-ndh2dq button') is clickable
+******* 01/05/2023 11: 37: 01 PM - INFO - do click on ('css selector', '.MuiCardContent-root.css-5y4tke')
+******* 01/05/2023 11: 37: 01 PM - INFO - ('css selector', '.MuiCardContent-root.css-5y4tke') is clickable
+******* 01/05/2023 11: 37: 01 PM - INFO - send keys or data on ('css selector', '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq')
+******* 01/05/2023 11: 37: 01 PM - INFO - ('css selector', '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq') is visible
+******* 01/05/2023 11: 37: 02 PM - INFO - do click on ('css selector', '.MuiSelect-select.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedStart.css-pgaui2')
+******* 01/05/2023 11: 37: 02 PM - INFO - ('css selector', '.MuiSelect-select.MuiSelect-outlined.MuiInputBase-input.MuiOutlinedInput-input.MuiInputBase-inputAdornedStart.css-pgaui2') is clickable
+******* 01/05/2023 11: 37: 02 PM - INFO - do click on ('css selector', '.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9 li:nth-child(2)')
+******* 01/05/2023 11: 37: 02 PM - INFO - ('css selector', '.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9 li:nth-child(2)') is clickable
+******* 01/05/2023 11: 37: 02 PM - INFO - do click on ('css selector', '.css-1s2p0j8 div:nth-child(3) div:nth-child(2)')
+******* 01/05/2023 11: 37: 02 PM - INFO - ('css selector', '.css-1s2p0j8 div:nth-child(3) div:nth-child(2)') is clickable
+******* 01/05/2023 11: 37: 02 PM - INFO - do click on ('css selector', '.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9 li:nth-child(2)')
+******* 01/05/2023 11: 37: 02 PM - INFO - ('css selector', '.MuiList-root.MuiList-padding.MuiMenu-list.css-r8u8y9 li:nth-child(2)') is clickable
+******* 01/05/2023 11: 37: 02 PM - INFO - do click on ('css selector', '.MuiBox-root.css-1h9zagw button:nth-child(2)')
+******* 01/05/2023 11: 37: 02 PM - INFO - ('css selector', '.MuiBox-root.css-1h9zagw button:nth-child(2)') is clickable
+******* 01/05/2023 11: 37: 02 PM - INFO - do click on ('css selector', '.MuiBox-root.css-1oevkxy button:nth-child(2)')
+******* 01/05/2023 11: 37: 02 PM - INFO - ('css selector', '.MuiBox-root.css-1oevkxy button:nth-child(2)') is clickable
+******* 01/05/2023 11: 37: 03 PM - INFO - get text from ('xpath', '//p[contains(text(),"200mTest")]')
+******* 01/05/2023 11: 37: 03 PM - INFO - ('xpath', '//p[contains(text(),"200mTest")]') is visible
+******* 01/05/2023 11: 37: 37 PM - INFO - do click on ('css selector', '.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-1yxmbwk')
+******* 01/05/2023 11: 37: 37 PM - INFO - ('css selector', '.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium.css-1yxmbwk') is clickable
+******* 01/05/2023 11: 37: 47 PM - INFO - do click on ('css selector', '.MuiBox-root.css-1l4w6pd button:nth-child(1)')
+******* 01/05/2023 11: 37: 47 PM - INFO - ('css selector', '.MuiBox-root.css-1l4w6pd button:nth-child(1)') is clickable
+******* 01/05/2023 11: 37: 47 PM - INFO - get text from ('css selector', '.MuiTypography-root.MuiTypography-body1.MuiTypography-alignCenter.css-ustd3q')
+******* 01/05/2023 11: 37: 47 PM - INFO - ('css selector', '.MuiTypography-root.MuiTypography-body1.MuiTypography-alignCenter.css-ustd3q') is visible
