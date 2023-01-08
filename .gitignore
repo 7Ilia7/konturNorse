@@ -1,4 +1,5 @@
 base_object.__init__.py
 .pytest_cache
-.popitki.py
+pages.popitki.py
 pytest_report
+logfile.log
