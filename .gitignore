@@ -3,3 +3,4 @@ base_object.__init__.py
 pages.popitki.py
 pytest_report
 logfile.log
+/pages/tren.py
