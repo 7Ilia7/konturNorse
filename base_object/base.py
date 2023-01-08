@@ -39,16 +39,6 @@ class BaseObject:
         self.log.info(f"get text from {locator}")
         return self.is_visible(locator).text
 
-    @staticmethod
-    def assertion(actual, expected):
-        """
-        Comparison of actual and expected result
-        :param actual: the result that is now
-        :param expected: the result we want to get
-        :return: compliance or non-compliance of the actual result with the expected
-        """
-        assert actual == expected, f'Failed. Expected {expected}, but got {actual}'
-
     def to_click(self, locator):
         """
         to click on visible element

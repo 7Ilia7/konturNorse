@@ -1,7 +1,8 @@
 from base_object.locators import CreateProjectsLocator
+from support.assertion import Assertion
 from base_object.locators import MainPageLocators
 from base_object.base import BaseObject
-class CreateProjectPage(BaseObject):
+class CreateProjectPage(BaseObject,Assertion):
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -53,7 +54,7 @@ class CreateProjectPage(BaseObject):
         self.to_click(CreateProjectsLocator.CREATE_PROJECT_BTN)
 
     def check_200m_project_was_created(self):
-        self.assertion(self.get_text(MainPageLocators.FIND_200M_PROJECT), "200mTest")
+        self.assertion_equal("200mTest", self.get_text(MainPageLocators.FIND_200M_PROJECT))
 
     def delete_first_project_in_list_btn_delete(self):
         self.to_click(MainPageLocators.DELETE_FIRST_PROJECT_IN_LIST)
@@ -96,4 +97,4 @@ class CreateProjectPage(BaseObject):
         self.to_click(CreateProjectsLocator.CHECK_SURFACE_CRACK)
 
     def check_14km_project_was_created(self):
-        self.assertion(self.get_text(MainPageLocators.FIND_14KM_PROJECT), "14km_all_tracker")
+        self.assertion_equal("14km_all_tracker", self.get_text(MainPageLocators.FIND_14KM_PROJECT))
