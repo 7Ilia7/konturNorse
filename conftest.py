@@ -70,24 +70,6 @@ def create_project_page(setup):
     """
     yield CreateProjectPage(setup)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 # @pytest.hookimpl(hookwrapper=True, tryfirst=True)
 # def pytest_runtest_makereport(item):
 #     outcome = yield
