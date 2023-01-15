@@ -30,6 +30,7 @@ def get_webdriver(get_chrome_options):
     driver = webdriver.Chrome(options=options, service=Service(ChromeDriverManager().install()))
     return driver
 
+
 @pytest.fixture(scope='function')
 def setup(get_webdriver):
     """
