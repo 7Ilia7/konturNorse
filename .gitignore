@@ -4,3 +4,4 @@ pages.popitki.py
 pytest_report
 logfile.log
 /pages/tren.py
+result.xml
