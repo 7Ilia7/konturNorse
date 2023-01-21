@@ -78,3 +78,6 @@ class CreateProjectsLocator:
     CHECK_BASE_BOTTOM_CRACK = (By.XPATH, '//span[contains(text(),"Base bottom")]')
     CHECK_ASPHALT_BOTTOM_CRACK = (By.XPATH, '//span[contains(text(),"Asphalt bottom")]')
     CHECK_SURFACE_CRACK = (By.XPATH, '//span[contains(text(),"Surface")]')
+
+class DataPackagePage:
+
