@@ -3,6 +3,7 @@ import time
 import pytest
 
 @pytest.mark.ui
+@pytest.mark.regression
 def test_create_200m_data_package(index_page, main_page, create_project_page, create_data_package_page):
     index_page.login_flow()
     main_page.click_on_data_package_menu()

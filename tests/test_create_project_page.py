@@ -2,6 +2,7 @@ import pytest
 
 @pytest.mark.ui
 @pytest.mark.smoke
+@pytest.mark.regression
 def test_create_200m_project(index_page, main_page, create_project_page):
     index_page.login_flow()
     main_page.click_on_btn_start_new_project()
@@ -24,6 +25,7 @@ def test_create_200m_project(index_page, main_page, create_project_page):
 
 @pytest.mark.ui
 @pytest.mark.smoke
+@pytest.mark.regression
 def test_create_14km_project(index_page, main_page, create_project_page):
     index_page.login_flow()
     main_page.click_on_btn_start_new_project()

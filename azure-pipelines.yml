@@ -8,7 +8,7 @@ parameters:
   - regression
 
 schedules:
-- cron: "0 0 * * *"
+- cron: "15 10 * * *"
   displayName: Daily midnight build
   branches:
     include:

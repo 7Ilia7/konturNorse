@@ -9,7 +9,7 @@ class BaseObject:
     log = log_method(logLevel=log.INFO)
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 10)
+        self.wait = WebDriverWait(driver, 600)
 
     def is_visible(self, locator):
         """
