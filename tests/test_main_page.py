@@ -1,6 +1,7 @@
 import pytest
 
 @pytest.mark.regression
+@pytest.mark.test
 def test_login_check_data_package_menu_button(index_page, main_page):
     index_page.login_flow()
     main_page.click_on_logo()

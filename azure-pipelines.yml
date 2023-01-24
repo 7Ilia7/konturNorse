@@ -6,6 +6,7 @@ parameters:
   values:
   - smoke
   - regression
+  - test
 
 schedules:
 - cron: "15 10 * * *"
