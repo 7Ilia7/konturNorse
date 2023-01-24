@@ -2,8 +2,18 @@ import time
 from support.assertion import Assertion
 from base_object.locators import Locators
 from base_object.base import BaseObject
+import os
+import json
 
+FULL_PATH = os.path.dirname(os.path.realpath(__file__))
+PATH = os.path.dirname(FULL_PATH)
+cred_path = str(PATH) + '/support/config.json'
+creds_file = open(cred_path, 'rb')
+creds = json.load(creds_file)
 
+USERNAME = creds['correct_username']
+PASSWORD = creds['correct_password']
+INCORRECT_USERNAME = creds['incorrect_username']
 
 class IndexPage(BaseObject, Assertion):
 
@@ -12,12 +22,15 @@ class IndexPage(BaseObject, Assertion):
         self.driver = driver
 
     def login_flow(self):
-        self.to_send_keys(Locators.USER_NAME_FIELD, "illia.demchuk@norse.digital")
-        self.to_send_keys(Locators.PASSWORD_FIELD, "Agr47001ii")
+        global USERNAME
+        global PASSWORD
+        self.to_send_keys(Locators.USER_NAME_FIELD, USERNAME)
+        self.to_send_keys(Locators.PASSWORD_FIELD, PASSWORD)
         self.to_click(Locators.LOGIN_BTN)
 
     def input_correct_user_name(self):
-        self.to_send_keys(Locators.USER_NAME_FIELD, "illia.demchuk@norse.digital")
+        global USERNAME
+        self.to_send_keys(Locators.USER_NAME_FIELD, USERNAME)
 
     def text_if_no_email(self):
         self.assertion_equal('E-mail address', self.get_text(Locators.ACTUAL_TEXT_WHEN_NO_EMAIL))

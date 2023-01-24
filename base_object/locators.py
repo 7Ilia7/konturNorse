@@ -79,5 +79,13 @@ class CreateProjectsLocator:
     CHECK_ASPHALT_BOTTOM_CRACK = (By.XPATH, '//span[contains(text(),"Asphalt bottom")]')
     CHECK_SURFACE_CRACK = (By.XPATH, '//span[contains(text(),"Surface")]')
 
-class DataPackagePage:
-
+class DataPackagePageLocators:
+    CREATE_DATA_PACKAGE_BUTTON = (By.XPATH, '//button[contains(text(),"Create new data package")]')
+    NAME_DATA_PACKAGE = (By.CSS_SELECTOR, '.MuiInputBase-input.MuiOutlinedInput-input.css-1sxenmq')
+    ADD_NEW_DATA_TYPE = (By.XPATH, '//button[contains(text(),"Add new data type")]')
+    CLICK_LATER_THICKNESS_DROP_DOWN = (By.XPATH, '//span[contains(text(),"Layer thickness")]')
+    CREATE_NEW_INTERFACE_BUTTON = (By.XPATH, '//button[normalize-space()="Create new interface"]')
+    CLICK_INTERFACE_TYPE_DROP_DOWN = (By.CSS_SELECTOR, '.MuiFormControl-root.css-1xg4kcz div:nth-child(2)')
+    CHOOSE_ASPHALT_INTERFACE_TYPE = (By.CSS_SELECTOR, '[data-value="ASPHALT_BOTTOM"]')
+    CLICK_ASPHALT_BUTTON_DROP_DOWN = (By.XPATH, '//span[normalize-space()="Asphalt bottom"]')
+    UPLOAD_NEW_FILE_TO_THIS_INTERFACE = (By.XPATH, '//span[normalize-space()="Upload new file to this interface"]')

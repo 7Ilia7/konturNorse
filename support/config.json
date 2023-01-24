@@ -1,0 +1,5 @@
+{
+  "correct_username": "$(correct_username)",
+  "correct_password": "$(correct_password)",
+  "incorrect_username": "$(incorrect_username)"
+}

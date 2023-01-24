@@ -6,6 +6,7 @@ from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
 from pages.index_page import IndexPage
 from pages.main_page import MainPage
+from pages.create_data_package_page import CreateDataPackagePage
 from pages.create_project_page import CreateProjectPage
 
 @pytest.fixture
@@ -39,7 +40,7 @@ def setup(get_webdriver):
     :return:
     """
     driver = get_webdriver
-    url = 'https://customer.dev.kontur.tech/'
+    url = 'https://customer.stage.kontur.tech/'
     driver.get(url)
     yield driver
     driver.quit()
@@ -70,6 +71,19 @@ def create_project_page(setup):
     :return: makes our class methods abstract
     """
     yield CreateProjectPage(setup)
+
+@pytest.fixture
+def create_data_package_page(setup):
+    """
+    Class methods for working with create_project_page elements
+    :param setup: Launching our browser with presets
+    :return: makes our class methods abstract
+    """
+    yield  CreateDataPackagePage(setup)
+
+
+
+
 
 # @pytest.hookimpl(hookwrapper=True, tryfirst=True)
 # def pytest_runtest_makereport(item):
