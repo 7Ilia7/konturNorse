@@ -1,10 +1,35 @@
+parameters:
+- name: subscription
+  displayName: Scopes
+  type: string
+  default: regression
+  values:
+  - smoke
+  - regression
+
+schedules:
+- cron: "0 0 * * *"
+  displayName: Daily midnight build
+  branches:
+    include:
+    - master
+
 trigger:
-- main
+- master
 
 pool:
    vmImage: 'windows-latest'
 
 steps:
+
+- task: replacetokens@3
+  displayName: 'Replace tokens'
+  inputs:
+    targetFiles: |
+      **/config.json
+    tokenPrefix: '$('
+    tokenSuffix: ')'
+
 - task: UsePythonVersion@0
   inputs:
     versionSpec: '3.9'
@@ -21,10 +46,21 @@ steps:
 
 - task: CmdLine@2
   inputs:
-    script: |
-      pytest
+    ${{ if contains(parameters.subscription, 'smoke') }}:
+      script: |
+        pytest -k "smoke"
+    ${{ if contains(parameters.subscription, 'regression') }}:
+      script: |
+        pytest
   displayName: 'pytest'
   continueOnError: true
+
+#- task: CmdLine@2
+#  inputs:
+#    script: |
+#      pytest
+#  displayName: 'pytest'
+#  continueOnError: true
 
 - task: PublishTestResults@2
   inputs:

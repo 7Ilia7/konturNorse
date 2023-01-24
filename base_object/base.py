@@ -9,7 +9,7 @@ class BaseObject:
     log = log_method(logLevel=log.INFO)
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(driver, 600)
+        self.wait = WebDriverWait(driver, 10)
 
     def is_visible(self, locator):
         """
@@ -57,6 +57,16 @@ class BaseObject:
         """
         self.log.info(f"send keys or data on {locator}")
         self.is_visible(locator).send_keys(data)
+
+    # def to_send_keys_file(self, locator, ):
+    #     """
+    #     Send values like "greench" or "123"
+    #     :param locator: is responsible for element
+    #     :param data: values
+    #     :return: fills the input field with data
+    #     """
+    #     self.log.info(f"send keys or data on {locator}")
+    #     self.is_visible(locator).send_keys(data)
 
     def is_disappeared(self, locator, locator2):
         """
